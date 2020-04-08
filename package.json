@@ -1,0 +1,46 @@
+{
+  "name": "@torch-ai/pipl-js",
+  "version": "1.0.0",
+  "description": "Provides an api client and types for the pipl service",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "npm run-script build:clean && npm run-script build:rollup",
+    "build:clean": "rimraf dist/*",
+    "build:rollup": "rollup -c",
+    "start": "npm run-script build:clean && rollup -cw",
+    "prepare": "npm t && npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:torch-ai/pipl-js.git"
+  },
+  "author": "Lance Gliser",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.0.0",
+    "@types/jest": "^24.0.24",
+    "@types/qs": "^6.9.1",
+    "canvas": "^2.6.1",
+    "dotenv": "^8.2.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.13",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^25.2.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "qs": "^6.9.3"
+  }
+}
