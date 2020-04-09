@@ -1,5 +1,5 @@
 {
-  "name": "@torch-ai/pipl-js",
+  "name": "@torch-ai/pipl",
   "version": "1.0.0",
   "description": "Provides an api client and types for the pipl service",
   "main": "dist/index.js",
