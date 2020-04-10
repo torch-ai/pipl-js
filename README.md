@@ -6,17 +6,10 @@
 
 ## Installation
 
-Ensure you have access to the private artifact repositories through a `.npmrc` file.
-This will require updating your own personal `.npmrc`, and the project's `.npmrc` with entries for:
-
-```
-@torch-ai:registry=https://pkgs.dev.azure.com/TorchResearchLLC/Torch-Data-Connectors/_packaging/torch-ai/npm/registry/
-```
-
 Install the service in your own project
 
 ```
-npm install @torch-ai/pipl-js
+npm install @torch-ai/pipl
 ```
 
 ## Initialization
@@ -25,7 +18,7 @@ At the top of your application, or in an imported configuration file:
 
 ```js
 // Import the service definition and environment constants
-import Pipl from "@torch-ai/pipl-js";
+import Pipl from "@torch-ai/pipl";
 
 // Create an instance of the service
 const options = {};
