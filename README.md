@@ -48,7 +48,7 @@ and [account registration](https://pipl.com/product-overview).
 
 ## Installation
 
-Clone the package from the [repository](https://dev.azure.com/TorchResearchLLC/Torch-Data-Connectors/_git/pipl-js).
+Clone the package and install the dependencies.
 
 ```
 npm install
@@ -70,9 +70,4 @@ npm run-script test:watch
 
 ## Publishing
 
-Be sure to bump the package.json version first.
-Run the publish command which will: run tests, build js files will rollup, emit typescript files, and publish to our private repositories.
-
-```
-npm publish
-```
+Open an issue requesting a version to publish.
