@@ -342,6 +342,18 @@ export class Person {
   public getThumbnailTokens(): string[] | undefined {
     return this.images?.map(image => image.thumbnail_token);
   }
+
+  public getThumbnailUrl(params: IThumbnailUrlCallParams = { height: 200, width: 200 }): string {
+    params.tokens = this.getThumbnailTokens();
+    const urlParameters: string = Object.keys(params)
+        .map(key => {
+          // @ts-ignore
+          const value: string = params[key];
+          return value ? `${key}=${value}` : "";
+        })
+        .join("&");
+    return THUMBNAIL_SERVER_URI + "?" + urlParameters;
+  }
 }
 
 /**

@@ -78,6 +78,7 @@ const expectPerson = async (person: Person) => {
   // expect(person.getGender()).toBeTruthy(); // This isn't always here
   // expect(person.getAge()).toBeTruthy(); // This isn't always here
   expect(person.getImageUrl()).toBeTruthy();
+  expect(person.getThumbnailUrl()).toBeTruthy();
 
   const name = person.names.shift();
   if (name) {
